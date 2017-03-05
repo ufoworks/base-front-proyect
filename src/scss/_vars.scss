@@ -1,0 +1,110 @@
+////
+/// Configuration
+/// @author Nicemondays
+/// @since version 0.1
+////
+
+$max-content-width: 1200px;
+$header-height: 48px;
+$header-mobile-height: 39px;
+
+/// Default browser font-size;
+$browser-context: 16px;
+
+/// Se usa como valor inicial en el body y para el cálculo de las unidades rem
+/// @see {function} rem
+/// @see {function} rem-space
+$base-font-size:    16px;
+
+/// Se usa para el calculo del line-height armonizado en el mixin font-size
+/// @see {mixin} font-size
+$base-line-height:  24px;
+
+/// Default font-weight value
+$base-font-weight: 	400;
+
+/// Default round corner value
+$base-round:        4px;
+
+/// Variable maestra a través de la cual serán todos los calculos de espacio en el framework
+/// Por defecto esta variable tiene el mismo valor que $base-line-height
+/// @see {function} rem-space
+/// @see {function} space
+$base-spacing-unit: $base-line-height;
+
+/// En este mapa definimos las rutas que se usarán para los assets
+/// El primer item del mapa define la ruta base de todos los assets
+$paths: (
+	base: '..',
+	fonts: 'fonts',
+	images: 'images'
+);
+
+/// En esta variable se define el esquema de color del proyecto. Colores base y tonos de color.
+/// Para acceder a estas variables se debe usar la función **getcolor**
+/// Si los helpers están activos se generarán estilos para el color de texto y para el color de fondo
+/// con la siguiente forma **.color--<color><tono>** **.bgcolor--<color><tono>
+/// @see {function} getcolor
+$colors: (
+	brand: #2569a5,
+	bgcolor: #000,
+	light: #fff,
+	dark: #333,
+	text: (
+		base: #2e3132,
+		dark: black,
+		light: #838688
+	),
+	ui: (
+		base: #666666,
+		dark: #272829,
+		light: #e6e6e6
+	) 
+);
+
+/// En esta variable debe guardarse todas las fuentes que se usarán en el proyecto.
+/// Para acceder a estas variables se debe usar la función **getface**
+/// @see {function} getface
+$faces: (
+	brand: ('Open Sans', Helvetica, sans-serif),
+);
+
+
+/// En esta variable guardamos todos los tamaños de texto maestros del site.
+/// Esto generará los estilos .fontsize--<name>
+$sizes: (
+	title: 24px,
+	bodycopy: 16px
+);
+
+/// Responsive configuration
+$responsive-feature: 'max-width';
+$responsive-to-ems: true;
+/// Breakpoints definitions
+$breakpoints: (
+	mobile: 700px,
+	tablet: 1000px
+);
+
+/// Base grid settings
+$grid-settings: (
+	columns: 12,
+	gutter: 30px
+);
+
+
+/// Estas variables definen si se incluirán en el framework estas clases. 
+
+/// Define si se incluiran los helpers al exportar
+$use-helpers: 		false;
+/// Define si se incluiran los formulario al exportar
+$use-forms: 		false;
+/// Define si se incluiran los botones al exportar
+$use-buttons: 		false;
+/// Define si se incluira el objeto dropmenu
+$use-dropmenu: 		false;
+/// Define si se incluira el objeto stackmenu
+$use-stackmenu:		false;
+/// Define si se incluira el objeto tabdata
+$use-tabdata:		false;
+

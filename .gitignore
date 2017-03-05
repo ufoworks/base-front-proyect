@@ -1,0 +1,10 @@
+public/
+.DS_Store
+.sass-cache/
+.idea/
+node_modules/
+*.sublime*
+/.settings
+/.buildpath
+/.project
+*..sublime-workspace

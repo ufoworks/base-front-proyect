@@ -1,0 +1,54 @@
+*{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	//-webkit-backface-visibility: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: getcolor(bg);
+	font-family: getface(brand);
+	font-size: getFontSize(bodycopy);
+	font-weight: 300;
+	line-height: 1.5;
+	color: getcolor(text);
+	overflow-x: hidden;
+	&.menuopen {
+		//overflow: hidden;
+	}
+}
+
+
+
+//img { max-width: 100%; }
+a { outline: 0; text-decoration: none; cursor: pointer; }
+
+h1,h2,h3,h4,h5,h6,ul { margin: 0; font-size: inherit; }
+
+textarea { box-shadow: 0 0; }
+
+ul { margin: 0; list-style: none; padding: 0; }
+
+p { margin-top: 0; }
+
+svg.icon {
+	fill: currentColor;
+}
+
+.hide { display: none; }
+.mb { margin-bottom: rem-space(1); }
+.block { display: block; }
+.text-center { text-align: center; }
+
+button {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
